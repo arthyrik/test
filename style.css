@@ -1,0 +1,237 @@
+body {
+    font-family: arial,helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    background-color: #0D8494;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    height: 30px;
+    background-color:  #096373;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+.header .header-menu-item {
+    color: white;
+    float: left;
+    padding: 7px 10px;
+    font-weight: bold;
+    font-size: 13px;
+    text-shadow: 0 1px 0 #303030;
+}
+.header .header-menu-item:hover, .header .header-menu-item.selected {
+    background-color: #C74C38;
+}
+.main {
+    padding: 30px 10px 0 0;
+}
+
+.left-menu {
+    width: 200px;
+    position: fixed;
+    float:left;
+    padding: 120px 0 10px 0px;
+    background-color: #0d8494;
+    height: 100%;
+}
+.left-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+.left-menu ul li {
+    text-shadow: 0 1px 0 #096373;
+}
+.left-menu ul li:first-child {
+    border-top: none;
+}
+.left-menu ul li.selected {
+    background-color: #dde8eb;
+    font-weight: bold;
+    box-shadow: -2px 1px 2px #096373;
+}
+.left-menu ul li.selected a {
+    color: #0d8494;
+    text-shadow: 0 1px 0 white;
+}
+.left-menu ul li a {
+    color: #fff;
+    display: block;
+    padding: 8px 10px 8px 0;
+    font-size: 14px;
+    text-align: center;
+}
+.left-menu ul li a:hover {
+    background-color: #dde8eb;
+    color: #0d8494;
+    text-shadow: 0 1px 0 white;
+    font-weight: bold;
+    box-shadow: -2px 1px 2px #096373;
+}
+.content {
+    float: left;
+    margin-left: 200px;
+    /*border: 1px solid white;*/
+}
+.catalog {
+    float: left;
+    width: 868px;
+    padding: 80px 5px 5px 10px;
+    background-color: #DDE8EB;
+}
+.catalog ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.catalog ul li {
+    background-color: white;
+    box-shadow: #303030 0 1px 3px 0px;
+    margin: 0 7px 7px 0;
+    float: left;
+    width: 200px;
+    border: 1px solid #fff;
+    padding: 4px;
+}
+.catalog ul li img {
+    /*height: 329px;*/
+    width: 200px;
+    border:0;
+}
+.catalog ul li dl {
+    color: #303030;
+    margin: 0;
+}
+.catalog ul li dl dt {
+    float: left;
+    width: 47px;
+    text-align: right;
+    padding-right: 5px;
+}
+.catalog ul li dl dd {
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.catalog ul li dl dt, .catalog ul li dl dd {
+    padding-bottom: 5px;
+}
+.catalog .price {
+    font-weight: bold;
+    float:right;
+    margin: 0;
+}
+
+.news {
+    margin-left: 20px;
+    margin-top: 100px;
+    float: left;
+    width: 225px;
+    background-color: #DDE8EB;
+    padding: 7px;
+    box-shadow: 0px 0px 15px #096373;
+}
+.news .news-header {
+    border-top: 6px solid #096373;
+    padding: 10px 0;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    text-shadow: 0 1px 0 white;
+}
+.news .news-content {
+    border: 1px solid #096373;
+    padding: 4px;
+    color: #303030;
+}
+.news .news-content .news-item {
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 48px;
+    font-weight: bold;
+    color: #096373;
+    margin-bottom: 12px;
+}
+.news .news-content .news-item .news-icon-link {
+    float: left;
+    margin: 0 10px 5px 0;
+}
+.news .news-content .news-item .news-text-link:hover {
+    text-decoration: underline;
+}
+.news .news-content .news-item .news-icon-link img {
+    width: 35px;
+    height: 35px;
+}
+
+.placeholder {
+    color: #B8D5D9;
+    position: absolute;
+    left: 10px;
+    top: 2px;
+    cursor: text;
+}
+.search-form {
+    margin-left: 40px;
+    margin-top: 5px;
+    width: 275px;
+    float: left;
+    position: relative;
+}
+.search-form .search-input {
+    border-radius: 10px;
+    border: 0;
+    height: 20px;
+    padding: 0 10px;
+    margin: 0;
+    width: 200px;
+    background-color: #fff;
+    box-shadow: inset 1px 1px 5px #0d8494;
+    color: #096373;
+}
+.search-form .search-input:focus {
+    outline: none;
+}
+.search-form .search-btn, .login-form .login-btn {
+    color: #096373;
+    line-height: 0.9em;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 10px;
+    float:right;
+    background-color: white;
+    font-weight: bold;
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-top: 1px;
+}
+.search-form .search-btn:hover, .login-form .login-btn:hover {
+    background-color: #C74C38;
+    color:white;
+}
+.login-form {
+    margin-top: 6px;
+    width: 265px;
+    float: right;
+    margin-right: 10px;
+}
+.login-form .login-btn {
+    margin-top: 0;
+}
+.login-form .login-username, .login-form .login-password {
+    border: 0;
+    height: 18px;
+    padding: 0 10px;
+    margin: 0;
+    background-color: #fff;
+    color: #096373;
+    width: 80px;
+    border-radius: 3px;
+    margin-left: 5px;
+}
